@@ -1,0 +1,23 @@
+- step: 1
+  action: open_url
+  url: 'https://google.com'
+
+- step: 2
+  action: send_keys_to_element
+  locator:
+    type: 'xpath'
+    value: '//*[@id="APjFqb"]'
+  input_text: 'selenium读取配置文件执行自动化'
+
+- step: 3
+  action: click_element
+  locator:
+    type: 'xpath'
+    value: '/html/body/div[1]/div[2]'
+
+
+- step: 3
+  action: click_element
+  locator:
+    type: 'xpath'
+    value: '/html/body/div[1]/div[3]/form/div[1]/div[1]/div[4]/center/input[1]'

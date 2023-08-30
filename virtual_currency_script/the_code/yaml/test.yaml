@@ -1,0 +1,384 @@
+- step: 1
+  name: '打开网址'
+  action: open_url
+  url: 'https://app.mav.xyz/'
+
+
+- step: 4
+  name: '切换标签页2'
+  action: switch_to_window
+  page_index: '1'
+
+#- step: 5
+#  name: '打开新标签页'
+#  action: execute_javascript
+#  javascript: "window.open('', '_blank');"
+#
+#- step: 6
+#  name: '切换标签页2'
+#  action: switch_to_window
+#  page_index: '1'
+#
+#- step: 7
+#  name: '打开网址'
+#  action: open_url
+#  url: 'chrome-extension://nkbihfbeogaeaoehlefnkodbefgpgknn/home.html'
+
+- step: 3
+  name: '等待元素出现'
+  action: wait_for_element
+  timeout: 20
+  locator:
+    type: 'xpath'
+    value: '//*[@id="app-content"]/div/div[2]/div/div/div/button'
+
+- step: 3
+  name: '点击开始使用'
+  action: click_element
+  locator:
+    type: 'xpath'
+    value: '//*[@id="app-content"]/div/div[2]/div/div/div/button'
+
+- step: 4
+  name: '点击我同意'
+  action: click_element
+  locator:
+    type: 'xpath'
+    value: '//*[@id="app-content"]/div/div[2]/div/div/div/div[5]/div[1]/footer/button[2]'
+
+- step: 5
+  name: '点击导入钱包'
+  action: click_element
+  locator:
+    type: 'xpath'
+    value: '//*[@id="app-content"]/div/div[2]/div/div/div[2]/div/div[2]/div[1]/button'
+
+#---------------------------------------------------------------------------------------------------------------------------------------------------
+
+#- step: 3
+#  name: '等待元素出现'
+#  action: wait_for_element
+#  timeout: 20
+#  locator:
+#    type: 'xpath'
+#    value: '//*[@id="app-content"]/div/div[2]/div/div/div/ul/li[1]/div/label/span/span'
+
+#- step: 9
+#  name: '点击勾选'
+#  action: click_element
+#  locator:
+#    type: 'xpath'
+#    value: '//*[@id="app-content"]/div/div[2]/div/div/div/ul/li[1]/div/label/span/span'
+#
+#- step: 10
+#  name: '导入现有钱包'
+#  action: click_element
+#  locator:
+#    type: 'xpath'
+#    value: '//*[@id="app-content"]/div/div[2]/div/div/div/ul/li[3]/button'
+#
+#- step: 10
+#  name: '我同意'
+#  action: click_element
+#  locator:
+#    type: 'xpath'
+#    value: '//*[@id="app-content"]/div/div[2]/div/div/div/div/button[1]'
+#
+#---------------------------------------------------------------------------------------------------------------------------------------------------
+- step: 11
+  name: '输入助记词1'
+  action: send_keys_to_element
+  locator:
+    type: 'xpath'
+    value: '//*[@id="import-srp__srp-word-0"]'
+  input_text: 'vault'
+- step: 12
+  name: '输入助记词2'
+  action: send_keys_to_element
+  locator:
+    type: 'xpath'
+    value: '//*[@id="import-srp__srp-word-1"]'
+  input_text: 'perfect'
+- step: 13
+  name: '输入助记词3'
+  action: send_keys_to_element
+  locator:
+    type: 'xpath'
+    value: '//*[@id="import-srp__srp-word-2"]'
+  input_text: 'rare'
+- step: 14
+  name: '输入助记词4'
+  action: send_keys_to_element
+  locator:
+    type: 'xpath'
+    value: '//*[@id="import-srp__srp-word-3"]'
+  input_text: 'economy'
+- step: 15
+  name: '输入助记词5'
+  action: send_keys_to_element
+  locator:
+    type: 'xpath'
+    value: '//*[@id="import-srp__srp-word-4"]'
+  input_text: 'pepper'
+- step: 16
+  name: '输入助记词6'
+  action: send_keys_to_element
+  locator:
+    type: 'xpath'
+    value: '//*[@id="import-srp__srp-word-5"]'
+  input_text: 'police'
+- step: 17
+  name: '输入助记词7'
+  action: send_keys_to_element
+  locator:
+    type: 'xpath'
+    value: '//*[@id="import-srp__srp-word-6"]'
+  input_text: 'mosquito'
+- step: 18
+  name: '输入助记词8'
+  action: send_keys_to_element
+  locator:
+    type: 'xpath'
+    value: '//*[@id="import-srp__srp-word-7"]'
+  input_text: 'unfair'
+- step: 19
+  name: '输入助记词9'
+  action: send_keys_to_element
+  locator:
+    type: 'xpath'
+    value: '//*[@id="import-srp__srp-word-8"]'
+  input_text: 'shine'
+- step: 20
+  name: '输入助记词10'
+  action: send_keys_to_element
+  locator:
+    type: 'xpath'
+    value: '//*[@id="import-srp__srp-word-9"]'
+  input_text: 'sketch'
+- step: 21
+  name: '输入助记词11'
+  action: send_keys_to_element
+  locator:
+    type: 'xpath'
+    value: '//*[@id="import-srp__srp-word-10"]'
+  input_text: 'animal'
+- step: 22
+  name: '输入助记词12'
+  action: send_keys_to_element
+  locator:
+    type: 'xpath'
+    value: '//*[@id="import-srp__srp-word-11"]'
+  input_text: 'clay'
+
+
+- step: 24
+  name: '输入密码'
+  action: send_keys_to_element
+  locator:
+    type: 'xpath'
+    value: '//*[@id="password"]'
+  input_text: '66345798qw'
+
+- step: 25
+  name: '确认密码'
+  action: send_keys_to_element
+  locator:
+    type: 'xpath'
+    value: '//*[@id="confirm-password"]'
+  input_text: '66345798qw'
+
+
+- step: 27
+  name: '勾选使用条款'
+  action: click_element
+  locator:
+    type: 'xpath'
+    value: '//*[@id="create-new-vault__terms-checkbox"]'
+
+- step: 27
+  name: '点击导入'
+  action: click_element
+  locator:
+    type: 'xpath'
+    value: '//*[@id="app-content"]/div/div[2]/div/div/div[2]/form/button'
+
+- step: 28
+  name: '等待元素出现'
+  action: wait_for_element
+  timeout: 20
+  locator:
+    type: 'xpath'
+    value: '//*[@id="app-content"]/div/div[2]/div/div/button'
+
+- step: 29
+  name: '点击全部完成'
+  action: click_element
+  locator:
+    type: 'xpath'
+    value: '//*[@id="app-content"]/div/div[2]/div/div/button'
+
+- step: 4
+  name: '切换标签页1'
+  action: switch_to_window
+  page_index: '0'
+
+#- step: 28
+#  name: '等待元素出现'
+#  action: wait_for_element
+#  timeout: 20
+#  locator:
+#    type: 'xpath'
+#    value: '/html/body/div[1]/div/div[2]/div/div/div/div[2]/button'
+#
+#
+#- step: 29
+#  name: '点击知道了'
+#  action: click_element
+#  locator:
+#    type: 'xpath'
+#    value: '/html/body/div[1]/div/div[2]/div/div/div/div[2]/button'
+#
+#- step: 30
+#  name: '点击下一步'
+#  action: click_element
+#  locator:
+#    type: 'xpath'
+#    value: '//*[@id="app-content"]/div/div[2]/div/div/div/div[2]/button'
+#- step: 31
+#  name: '点击完成'
+#  action: click_element
+#  locator:
+#    type: 'xpath'
+#    value: '//*[@id="app-content"]/div/div[2]/div/div/div/div[2]/button'
+#
+#- step: 32
+#  name: '关闭弹窗'
+#  action: click_element
+#  locator:
+#    type: 'xpath'
+#    value: '//*[@id="popover-content"]/div/div/section/div[1]/div/button/span'
+#
+#
+#- step: 33
+#  name: '切换标签页1'
+#  action: switch_to_window
+#  page_index: '0'
+#
+#
+- step: 11
+  name: '刷新网页'
+  action: refresh_page
+
+- step: 34
+  name: '点击登录'
+  action: click_element
+  locator:
+    type: 'xpath'
+    value: '//*[@id="root"]/div/header[2]/div/div/div/div[2]/div[2]/button/p'
+
+- step: 35
+  name: '等待元素出现'
+  action: wait_for_element
+  timeout: 20
+  locator:
+    type: 'xpath'
+    value: '/html/body/onboard-v2'
+
+- step: 36
+  name: '勾选协议'
+  action: shadow_root
+  locator:
+    type: 'xpath'
+    value: '/html/body/onboard-v2'
+    shadow_value: "svelte-wp0cfb"
+
+- step: 37
+  name: '选择钱包'
+  action: shadow_root
+  locator:
+    type: 'xpath'
+    value: '/html/body/onboard-v2'
+    shadow_value: "svelte-11mmkf"
+
+
+
+- step: 38
+  name: '切换标签页3'
+  action: switch_to_new_windows
+
+
+- step: 38
+  name: '点击下一步'
+  action: click_element
+  locator:
+    type: 'xpath'
+    value: '//*[@id="app-content"]/div/div[2]/div/div[3]/div[2]/button[2]'
+
+- step: 38
+  name: '点击连接'
+  action: click_element
+  locator:
+    type: 'xpath'
+    value: '//*[@id="app-content"]/div/div[2]/div/div[2]/div[2]/div[2]/footer/button[2]'
+
+#- step: 39
+#  name: '等待元素出现'
+#  action: wait_for_element
+#  timeout: 20
+#  locator:
+#    type: 'xpath'
+#    value: "//button[text()='下一步']"
+
+#- step: 40
+#  name: '点击下一步'
+#  action: click_element
+#  locator:
+#    type: 'xpath'
+#    value: '//*[@id="app-content"]/div/div/div/div[3]/div[2]/footer/button[2]'
+#
+#
+
+#
+#- step: 39
+#  name: '点击连接'
+#  action: click_element
+#  locator:
+#    type: 'xpath'
+#    value: '//*[@id="app-content"]/div/div/div/div[2]/div[2]/div[2]/footer/button[2]'
+#
+#- step: 40
+#  name: '切换标签页1'
+#  action: switch_to_window
+#  page_index: '0'
+#
+#
+#- step: 41
+#  name: '点击货币'
+#  action: click_element
+#  locator:
+#    type: 'xpath'
+#    value: '//*[@id="customized-hook-demo-option-3"]/div[1]/div/h4'
+#- step: 42
+#  name: '选择货币'
+#  action: click_element
+#  locator:
+#    type: 'xpath'
+#    value: '//*[@id="demo-simple-select-filled"]/h6/div'
+#
+#
+#
+#
+#- step: 43
+#  name: '输入货币名称'
+#  action: send_keys_to_element
+#  locator:
+#    type: 'xpath'
+#    value: '//*[@id="customized-hook-demo"]'
+#  input_text: 'ETH'
+#
+#- step: 44
+#  name: '点击货币'
+#  action: click_element
+#  locator:
+#    type: 'xpath'
+#    value: '//*[@id="customized-hook-demo-option-3"]/div[1]/div/h4'

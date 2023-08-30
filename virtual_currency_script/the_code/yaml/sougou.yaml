@@ -1,0 +1,18 @@
+- step: 1
+  action: open_url
+  url: 'https://www.sogou.com/'
+
+- step: 2
+  action: send_keys_to_element
+  locator:
+    type: 'xpath'
+    value: '//*[@id="query"]'
+  input_text: 'selenium读取配置文件执行自动化'
+
+- step: 3
+  action: click_element
+  locator:
+    type: 'xpath'
+    value: '//*[@id="stb"]'
+
+  vault perfect rare economy pepper police mosquito unfair shine sketch animal clay

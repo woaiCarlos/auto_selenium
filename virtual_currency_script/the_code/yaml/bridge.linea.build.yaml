@@ -1,0 +1,353 @@
+- step: 1
+  name: '打开网址'
+  action: open_url
+  url: 'https://swapbox.nabox.io/swap'
+
+- step: 2
+  name: '切换标签页2'
+  action: switch_to_window
+  page_index: '1'
+
+- step: 3
+  name: '等待元素出现'
+  action: wait_for_element
+  timeout: 20
+  locator:
+    type: 'xpath'
+    value: '//*[@id="app-content"]/div/div[2]/div/div/div/button'
+
+- step: 4
+  name: '点击开始使用'
+  action: click_element
+  locator:
+    type: 'xpath'
+    value: '//*[@id="app-content"]/div/div[2]/div/div/div/button'
+
+- step: 5
+  name: '点击我同意'
+  action: click_element
+  locator:
+    type: 'xpath'
+    value: '//*[@id="app-content"]/div/div[2]/div/div/div/div[5]/div[1]/footer/button[2]'
+
+- step: 6
+  name: '点击导入钱包'
+  action: click_element
+  locator:
+    type: 'xpath'
+    value: '//*[@id="app-content"]/div/div[2]/div/div/div[2]/div/div[2]/div[1]/button'
+- step: 7
+  name: '输入助记词1'
+  action: send_keys_to_element
+  locator:
+    type: 'xpath'
+    value: '//*[@id="import-srp__srp-word-0"]'
+  input_text: 'vault'
+- step: 8
+  name: '输入助记词2'
+  action: send_keys_to_element
+  locator:
+    type: 'xpath'
+    value: '//*[@id="import-srp__srp-word-1"]'
+  input_text: 'perfect'
+- step: 9
+  name: '输入助记词3'
+  action: send_keys_to_element
+  locator:
+    type: 'xpath'
+    value: '//*[@id="import-srp__srp-word-2"]'
+  input_text: 'rare'
+- step: 10
+  name: '输入助记词4'
+  action: send_keys_to_element
+  locator:
+    type: 'xpath'
+    value: '//*[@id="import-srp__srp-word-3"]'
+  input_text: 'economy'
+- step: 11
+  name: '输入助记词5'
+  action: send_keys_to_element
+  locator:
+    type: 'xpath'
+    value: '//*[@id="import-srp__srp-word-4"]'
+  input_text: 'pepper'
+- step: 12
+  name: '输入助记词6'
+  action: send_keys_to_element
+  locator:
+    type: 'xpath'
+    value: '//*[@id="import-srp__srp-word-5"]'
+  input_text: 'police'
+- step: 13
+  name: '输入助记词7'
+  action: send_keys_to_element
+  locator:
+    type: 'xpath'
+    value: '//*[@id="import-srp__srp-word-6"]'
+  input_text: 'mosquito'
+- step: 14
+  name: '输入助记词8'
+  action: send_keys_to_element
+  locator:
+    type: 'xpath'
+    value: '//*[@id="import-srp__srp-word-7"]'
+  input_text: 'unfair'
+- step: 15
+  name: '输入助记词9'
+  action: send_keys_to_element
+  locator:
+    type: 'xpath'
+    value: '//*[@id="import-srp__srp-word-8"]'
+  input_text: 'shine'
+- step: 16
+  name: '输入助记词10'
+  action: send_keys_to_element
+  locator:
+    type: 'xpath'
+    value: '//*[@id="import-srp__srp-word-9"]'
+  input_text: 'sketch'
+- step: 17
+  name: '输入助记词11'
+  action: send_keys_to_element
+  locator:
+    type: 'xpath'
+    value: '//*[@id="import-srp__srp-word-10"]'
+  input_text: 'animal'
+- step: 18
+  name: '输入助记词12'
+  action: send_keys_to_element
+  locator:
+    type: 'xpath'
+    value: '//*[@id="import-srp__srp-word-11"]'
+  input_text: 'clay'
+
+
+- step: 19
+  name: '输入密码'
+  action: send_keys_to_element
+  locator:
+    type: 'xpath'
+    value: '//*[@id="password"]'
+  input_text: '66345798qw'
+
+- step: 20
+  name: '确认密码'
+  action: send_keys_to_element
+  locator:
+    type: 'xpath'
+    value: '//*[@id="confirm-password"]'
+  input_text: '66345798qw'
+
+
+- step: 21
+  name: '勾选使用条款'
+  action: click_element
+  locator:
+    type: 'xpath'
+    value: '//*[@id="create-new-vault__terms-checkbox"]'
+
+- step: 22
+  name: '点击导入'
+  action: click_element
+  locator:
+    type: 'xpath'
+    value: '//*[@id="app-content"]/div/div[2]/div/div/div[2]/form/button'
+
+- step: 23
+  name: '等待元素出现'
+  action: wait_for_element
+  timeout: 20
+  locator:
+    type: 'xpath'
+    value: '//*[@id="app-content"]/div/div[2]/div/div/button'
+
+- step: 24
+  name: '点击全部完成'
+  action: click_element
+  locator:
+    type: 'xpath'
+    value: '//*[@id="app-content"]/div/div[2]/div/div/button'
+
+- step: 25
+  name: '点击头像'
+  action: click_element
+  locator:
+    type: 'xpath'
+    value: '//*[@id="app-content"]/div/div[1]/div/div[2]/button/div'
+
+- step: 26
+  name: '点击导入账户'
+  action: click_element
+  locator:
+    type: 'xpath'
+    value: '//*[@id="app-content"]/div/div[3]/button[2]/div[2]'
+
+- step: 27
+  name: '等待元素出现'
+  action: wait_for_element
+  timeout: 20
+  locator:
+    type: 'xpath'
+    value: '//*[@id="private-key-box"]'
+
+- step: 28
+  name: '输入密钥'
+  action: send_keys_to_element
+  locator:
+    type: 'xpath'
+    value: '//*[@id="private-key-box"]'
+  input_text: 'ec258162dd35ea868de50a1e037c9af2a06eef9945b338b007d148ab7838e90e'
+
+- step: 29
+  name: '点击导入'
+  action: click_element
+  locator:
+    type: 'xpath'
+    value: '//*[@id="app-content"]/div/div[3]/div/div/div[2]/div[2]/div[2]/button[2]'
+
+- step: 11
+  name: '强制等待'
+  action: timesleep
+  timesleep: 3
+
+- step: 30
+  name: '切换标签页1'
+  action: switch_to_window
+  page_index: '0'
+
+
+- step: 12
+  name: 'sdf'
+  action: refresh_page
+
+- step: 11
+  name: '强制等待'
+  action: timesleep
+  timesleep: 2
+
+- step: 31
+  name: '点击选择狐狸'
+  action: click_element
+  locator:
+    type: 'xpath'
+    value: '/html/body/div/div/div[3]/div[1]/div/div[2]/div[1]'
+
+- step: 11
+  name: '强制等待'
+  action: timesleep
+  timesleep: 2
+
+
+- step: 32
+  name: '切换标签页3'
+  action: switch_to_new_windows
+
+- step: 11
+  name: '强制等待'
+  action: timesleep
+  timesleep: 3
+
+
+- step: 33
+  name: '点击下一步'
+  action: click_element
+  locator:
+    type: 'xpath'
+    value: '//*[@id="app-content"]/div/div[2]/div/div[3]/div[2]/button[2]'
+
+- step: 34
+  name: '点击连接'
+  action: click_element
+  locator:
+    type: 'xpath'
+    value: '//*[@id="app-content"]/div/div[2]/div/div[2]/div[2]/div[2]/footer/button[2]'
+
+- step: 35
+  name: '切换标签页1'
+  action: switch_to_window
+  page_index: '0'
+
+
+- step: 36
+  name: '点击链接'
+  action: click_element
+  locator:
+    type: 'xpath'
+    value: '/html/body/div/div/div[3]/div[1]/div'
+
+- step: 11
+  name: '强制等待'
+  action: timesleep
+  timesleep: 5
+
+- step: 37
+  name: '切换标签页3'
+  action: switch_to_new_windows
+
+
+- step: 38
+  name: '点击签名'
+  action: click_element
+  locator:
+    type: 'xpath'
+    value: '//*[@id="app-content"]/div/div[2]/div/div[3]/button[2]'
+
+- step: 39
+  name: '切换标签页1'
+  action: switch_to_window
+  page_index: '0'
+
+- step: 41
+  name: '强制等待'
+  action: timesleep
+  timesleep: 3
+
+
+
+- step: 40
+  name: '输入金额'
+  action: send_keys_to_element
+  locator:
+    type: 'xpath'
+    value: '/html/body/div/div/div[3]/div[1]/div[1]/div[1]/div[3]/div[4]/input'
+  input_text: '0.001'
+
+
+#- step: 41
+#  name: '强制等待'
+#  action: timesleep
+#  timesleep: 20
+#
+#
+#- step: 42
+#  name: '点击next'
+#  action: click_element
+#  locator:
+#    type: 'xpath'
+#    value: '/html/body/div/div/div[3]/div[1]/div[1]/div[2]/div'
+#
+#- step: 43
+#  name: '等待元素出现'
+#  action: wait_for_element
+#  timeout: 20
+#  locator:
+#    type: 'xpath'
+#    value: '/html/body/div/div/div[3]/div[1]/div[1]/div[2]/div[4]/div[4]'
+
+
+#- step: 44
+#  name: '点击支付'
+#  action: click_element
+#  locator:
+#    type: 'xpath'
+#    value: '/html/body/div/div/div[3]/div[1]/div[1]/div[2]/div[4]/div[4]'
+#
+
+
+- step: 40
+  name: 输入金额
+  action: qingkongliulanqishuju
+
+- step: 44
+  name: 哈哈哈
+  action: driver_quit
